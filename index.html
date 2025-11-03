@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Study of  Image Harmonization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="study-container">
+        <div id="header">
+            <h1>User Study of Image Harmonization</h1>
+            <p>Rank the following four images according to your preference.<b>1 being the best while 6 being the worst.</b></p>
+            <p>You Can click any image to Zoom-in</p>
+        </div>
+
+        <div id="progress-indicator"></div>
+
+        <div id="image-grid">
+            <!-- 图像容器将由JavaScript动态生成 -->
+        </div>
+
+        <div id="navigation">
+            <button id="next-btn" disabled>Next</button>
+        </div>
+    </div>
+
+    <div id="completion-screen" style="display: none;">
+        <h1>Everything is done!</h1>
+        <p>Thank you very much for your participation. Your results are ready, please click the button below to download the result file</p>
+        <p>Your random user ID: <b id="user-id-display"></b></p>
+        <button id="download-btn">Donload</button>
+    </div>
+
+    <!-- 放大对比的遮罩层 -->
+    <div id="zoom-overlay" style="display: none;">
+        <div id="zoom-grid">
+             <!-- 放大的图像将由JavaScript动态生成 -->
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
